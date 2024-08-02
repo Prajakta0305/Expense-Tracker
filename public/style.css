@@ -1,0 +1,135 @@
+/* Global Styles */
+body {
+    background-color: #c9f4ff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Heading Styles */
+h1, h2 {
+    text-align: center;
+    color: #333;
+    margin: 20px 0;
+}
+
+/* Form Section */
+.input-section {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #f6d365, #fda085); 
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow-x: auto;
+    transition: background 0.5s ease; 
+}
+
+.input-section:hover {
+    background: linear-gradient(135deg, #fda085, #f6d365); /* Animated gradient on hover */
+}
+
+.input-section label {
+    font-weight: bold;
+    margin-right: 10px;
+    color: #333;
+    flex-shrink: 0;
+}
+
+.input-section select, 
+.input-section input {
+    padding: 12px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 200px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-section input:focus, 
+.input-section select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+.input-section button {
+    padding: 12px 20px;
+    background: linear-gradient(90deg, #ff6f61, #de8e92);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input-section button:hover {
+    background: linear-gradient(90deg, #de8e92, #ff6f61);
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Expenses List Section */
+.expenses-list {
+    margin: 20px auto;
+    max-width: 1000px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #f9f9f9; /* Light background */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: background 0.5s ease; /* Animation for background */
+}
+
+thead {
+    background: #007bff; /* Dark blue background */
+    color: #fff;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    transition: background 0.3s ease; /* Animation for cell background */
+}
+
+tbody tr:nth-child(even) {
+    background: #fff3d2; /* Light gray background for even rows */
+}
+
+tbody tr:nth-child(odd) {
+    background: #ffffff; /* White background for odd rows */
+}
+
+tbody tr:hover {
+    background: #e0e6ed; /* Highlight background on hover */
+}
+
+tfoot td {
+    font-weight: bold;
+    background: #e0e6ed; /* Subtle background for footer */
+}
+
+/* Delete Button */
+.delete-btn {
+    padding: 8px 16px;
+    background: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.delete-btn:hover {
+    background: #c82333;
+    transform: scale(1.05);
+}
